@@ -36,7 +36,7 @@ Follow these steps to get the project up and running on your local machine:
    ```
 2. **Navigate to the Project Directory:**
    ```bash
-   cd .\E-Commerce-Tech-Vista-Back-End\E-Commerce-Tech-Vista\
+   Create your own folder. And navigate to that folder
    ```
 3. **Run the development server:**
    ```bash
