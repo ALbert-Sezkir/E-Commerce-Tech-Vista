@@ -1,5 +1,5 @@
 import express from 'express';
-import { createOrder, getUserOrders } from '../controllers/orderController.js';
+import { createOrder, getMyOrders, getUserOrders } from '../controllers/orderController.js';
 import authenticate from '../middleware/authenticate.js';
 
 const router = express.Router();
@@ -10,4 +10,8 @@ router.post('/', authenticate, createOrder);
 
 // GET route to get all orders of a user
 router.get('/', authenticate, getUserOrders);
+
+//GET route to get all orders of the authenticated user
+router.get('/', authenticate, getMyOrders) 
+
 export default router;

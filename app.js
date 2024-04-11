@@ -30,6 +30,8 @@ app.use('/api/login', loginUserRouters);
 
 app.use('/api/orders', orderRouter);
 
+app.use('/api/myorders', orderRouter);
+
 
 
 

@@ -39,3 +39,12 @@ export const createOrder = async (req, res) => {
       return res.status(500).json({ message: error.message });
     }
   };
+
+  //get all my orders from the database
+
+  export const getMyOrders = async (req, res) => {
+    Order.find({ user: req.user._id })
+        .then(orders => res.json(orders))
+        .catch(err => res.status(500).json('Error: ' + err));
+};
+
