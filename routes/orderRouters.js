@@ -11,5 +11,7 @@ router.post('/', authenticate, createOrder);
 // GET route to get all orders of a user
 router.get('/', authenticate, getUserOrders);
 
+router.get('/:id', authenticate, getUserOrders);
+
 
 export default router;
