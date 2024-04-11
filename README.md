@@ -46,7 +46,7 @@ Follow these steps to get the project up and running on your local machine:
    ```bash
    run npm install on your terminal to get the neccesary packages 
    ```
-5. **Important! require .env file:**
+5. **Important! requires .env file:**
    ```bash
    requiers a .env file to accees database. Send me a message in github to get the file.  
    ```
