@@ -25,7 +25,7 @@ export const createProduct = async (req, res) => {
         res.status(201).json(newProduct);
 }
 catch(err){
-    //res.status(500).json({ error: 'Error creating product' })
+    
     res.json({
         message: err.message,
         stack: process.env.NODE_ENV === 'development' ? err.stack : null
@@ -41,7 +41,7 @@ catch(err){
 
 export const getProducts = async (req, res) => {
     try{
-        const products = await Product.find()  //products istället för todos
+        const products = await Product.find()  
         res.status(200).json(products)
     }// ger tillbaka en array med resultat av vad den hittar.
     
@@ -76,9 +76,9 @@ export const getProductById = async (req, res) => {
 };
 
 
-/**
- * @description Takes an id and Updates product on the database  
- */
+
+ //Takes an id and Updates product on the database  
+ 
 
 export const updateProduct = async (req, res) => {
 try {
@@ -108,12 +108,11 @@ try {
 
 }
 
-//res.status(200).json({message: 'Update'})
-//`${URI}/orders`
 
-/**
- * @description Takes an id and Deletes product on the database  
- */
+
+
+ //Takes an id and Deletes product on the database  
+ 
 
 export const deleteProduct = async (req, res) => {
     try{
